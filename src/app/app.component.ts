@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'Angular 9 Fundamentals';
   links = [
     { path: '/home', icon: 'home', title: 'Home' },
-    { path: '/courses', icon: 'view_list', title: 'Courses' },
+    { path: '/courses', icon: 'view_list', title: 'Courses' }
   ];
 
   constructor() {}

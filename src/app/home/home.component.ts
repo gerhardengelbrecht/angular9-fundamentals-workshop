@@ -22,7 +22,9 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.currentLesson = null;
+  }
 
   selectLesson(lesson) {
     this.currentLesson = lesson;

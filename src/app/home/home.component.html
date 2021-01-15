@@ -14,7 +14,19 @@
       </mat-list-item>
     </mat-list>
   </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      DEBUG
+    </mat-card-title>
+  </mat-card-header>
   <mat-card-content>
-    {{currentLesson.title}}
+    <mat-list>
+      <mat-list-item>
+        <span *ngIf="currentLesson">{{ currentLesson | json }}</span>
+      </mat-list-item>
+    </mat-list>
   </mat-card-content>
 </mat-card>

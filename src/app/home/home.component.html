@@ -25,7 +25,8 @@
   <mat-card-content>
     <mat-list>
       <mat-list-item>
-        <span *ngIf="currentLesson">{{ currentLesson | json }}</span>
+        <span *ngIf="currentLesson else elseBlock">{{ currentLesson.title }}</span>
+        <ng-template #elseBlock>Select a lesson</ng-template>
       </mat-list-item>
     </mat-list>
   </mat-card-content>

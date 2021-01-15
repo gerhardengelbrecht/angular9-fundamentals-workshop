@@ -5,13 +5,8 @@
     </mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <span [style.color]="themeColor" style="font-weight: 900"
-      >Some Color Text!</span
-    ><br />
-    <mat-form-field class="example-full-width">
-      <mat-label>Theme Color</mat-label>
-      <input matInput [(ngModel)]="themeColor" />
-    </mat-form-field>
-    <button mat-button (click)="updateColor()">Update</button>
+    <mat-list-item *ngFor="let item of courseLessons">
+      <li>{{ item.title }}</li>
+    </mat-list-item>
   </mat-card-content>
 </mat-card>
